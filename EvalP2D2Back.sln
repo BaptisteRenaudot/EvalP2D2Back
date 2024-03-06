@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.Repository.Contrac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.Service", "EvalP2D2.Service\EvalP2D2.Service.csproj", "{CBAAF147-7DED-4B1B-81A2-424C2FA62747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1EvalP2D2.Service.Contracts", "ClassLibrary1EvalP2D2.Service.Contracts\ClassLibrary1EvalP2D2.Service.Contracts.csproj", "{40641D19-5DA5-4305-8DE2-323DEDCAA548}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.Service.Contracts", "EvalP2D2.Service.Contracts\EvalP2D2.Service.Contracts.csproj", "{40641D19-5DA5-4305-8DE2-323DEDCAA548}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
