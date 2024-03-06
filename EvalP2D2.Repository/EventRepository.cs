@@ -20,4 +20,9 @@ public class EventRepository: IEventRepository
         this._context.eventEntity.Add(entity);
         await this._context.SaveChangesAsync();
     }
+    
+    public async Task<IEnumerable<EventEntity>> GetEvents()
+    {
+        return await this._context.eventEntity.ToListAsync();
+    }
 }

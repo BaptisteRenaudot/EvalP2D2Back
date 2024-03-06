@@ -18,4 +18,9 @@ public class EventService : IEventService
         await this._eventRepository.AddAsync(entity);
         return true;
     }
+    
+    public async Task<IEnumerable<EventEntity>> GetEvents()
+    {
+        return await this._eventRepository.GetEvents();
+    }
 }
