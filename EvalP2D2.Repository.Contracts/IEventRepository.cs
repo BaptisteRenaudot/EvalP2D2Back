@@ -10,4 +10,10 @@ public interface IEventRepository
     /// <param name="entity"> The event to add.</param>
     /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
     public Task AddAsync(EventEntity entity);
+    
+    /// <summary>
+    /// Get alls events from the database asynchronously.
+    /// </summary>
+    /// <returns> The list of events.</returns>
+    public Task<IEnumerable<EventEntity>> GetEvents();
 }
