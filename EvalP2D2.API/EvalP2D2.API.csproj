@@ -30,6 +30,7 @@
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\EvalP2D2.DAL\EvalP2D2.DAL.csproj" />
+      <ProjectReference Include="..\EvalP2D2.DTO\EvalP2D2.DTO.csproj" />
       <ProjectReference Include="..\EvalP2D2.Repository.Contracts\EvalP2D2.Repository.Contracts.csproj" />
       <ProjectReference Include="..\EvalP2D2.Repository\EvalP2D2.Repository.csproj" />
       <ProjectReference Include="..\EvalP2D2.Service.Contracts\EvalP2D2.Service.Contracts.csproj" />

@@ -22,7 +22,7 @@ public class EventDeleteFunction
     }
 
     [Function("EventDeleteFunction")]
-    public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "delete", Route = "events/{id}")] HttpRequestData req, Guid id,
+    public async Task<HttpResponseData> Delete([HttpTrigger(AuthorizationLevel.Function, "delete", Route = "events/{id}")] HttpRequestData req, Guid id,
         FunctionContext executionContext)
     {
         var response = req.CreateResponse(HttpStatusCode.NoContent);

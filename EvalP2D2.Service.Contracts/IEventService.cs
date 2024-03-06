@@ -1,3 +1,4 @@
+using EvalP2D2.DTO;
 using EvalP2D2.Entity;
 
 namespace EvalP2D2.Service.Contracts;
@@ -23,4 +24,13 @@ public interface IEventService
     /// <param name="id">The ID of the event to delete.</param>
     /// <returns>true if the event is deleted successfully; otherwise, false.</returns>
     public Task<bool> DeleteAsync(Guid id);
+    
+    /// <summary>
+    /// Update an event in the database.
+    /// </summary>
+    /// <param name="entity"> The event to update.</param>
+    /// <param name="id">The ID of the event to update.</param>
+    /// <returns>true if the event is updated successfully; otherwise, false.</returns>
+    public Task<EventEntity> UpdateAsync(Guid id, EventDTO entity);
+
 }

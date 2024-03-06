@@ -1,5 +1,6 @@
 ﻿using Azure.Core;
 using EvalP2D2.DAL;
+using EvalP2D2.DTO;
 using EvalP2D2.Entity;
 using EvalP2D2.Repository.Contracts;
 using Microsoft.EntityFrameworkCore;
@@ -36,5 +37,24 @@ public class EventRepository: IEventRepository
         this._context.eventEntity.Remove(entity);
         await this._context.SaveChangesAsync();
         return true;
+    }
+    
+    public async Task<EventEntity> UpdateAsync(Guid id, EventDTO entity)
+    {
+        var data = await this._context.eventEntity.FindAsync(id);
+
+        if (data == null)
+        {
+            throw new Exception("Event not found");
+        }
+        else
+        {
+            data.Title = entity.Title;
+            data.Description = entity.Description;
+            data.DateTime = entity.DateTime;
+            data.Location = entity.Location;
+            await this._context.SaveChangesAsync();
+            return data;
+        }
     }
 }
