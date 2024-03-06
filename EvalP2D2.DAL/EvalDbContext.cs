@@ -9,20 +9,23 @@ public class EvalDbContext : Microsoft.EntityFrameworkCore.DbContext
         : base(options)
     {
     }
-
-    public DbSet<Class1> Class1 { get; set; }
+    
+        public DbSet<eventEntity> eventEntity { get; set; }
+        
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-
-        modelBuilder.Entity<Class1>(
-            class1Entity =>
+    
+        modelBuilder.Entity<eventEntity>(
+            eventEntity =>
             {
-                class1Entity.ToTable("Class1");
-                class1Entity.HasKey(e => e.Id);
-                class1Entity.Property(e => e.Id).HasDefaultValueSql("NEWID()").HasColumnName("Id");
-                class1Entity.Property(e => e.MyProperty).IsRequired().HasColumnName("MyProperty");
-                class1Entity.Property(e => e.MyProperty2).IsRequired().HasMaxLength(50).HasColumnName("MyProperty2");
+                eventEntity.ToTable("Event");
+                eventEntity.HasKey(e => e.Id);
+                eventEntity.Property(e => e.Id).HasDefaultValueSql("NEWID()").HasColumnName("Id");
+                eventEntity.Property(e => e.Title).IsRequired().HasMaxLength(50).HasColumnName("Title");
+                eventEntity.Property(e => e.Description).IsRequired().HasMaxLength(50).HasColumnName("Description");
+                eventEntity.Property(e => e.DateTime).IsRequired().HasColumnName("DateTime");
+                eventEntity.Property(e => e.Location).IsRequired().HasMaxLength(50).HasColumnName("Location");
             });
     }
 }
