@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.API", "EvalP2D2.API\EvalP2D2.API.csproj", "{D7B82D34-28A4-47DA-802B-C7B4739188F2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.Common", "EvalP2D2.Common\EvalP2D2.Common.csproj", "{E9FA7625-9972-41C6-ADEB-2B0E1574CB0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.DAL", "EvalP2D2.DAL\EvalP2D2.DAL.csproj", "{71E46264-5C27-497E-9093-E8FA68B4E4E7}"
@@ -18,16 +16,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.Service", "EvalP2D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.Service.Contracts", "EvalP2D2.Service.Contracts\EvalP2D2.Service.Contracts.csproj", "{40641D19-5DA5-4305-8DE2-323DEDCAA548}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalP2D2.API", "EvalP2D2.API\EvalP2D2.API.csproj", "{BBFC4CF1-9F64-473A-BD30-53D945B64CE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7B82D34-28A4-47DA-802B-C7B4739188F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7B82D34-28A4-47DA-802B-C7B4739188F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7B82D34-28A4-47DA-802B-C7B4739188F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7B82D34-28A4-47DA-802B-C7B4739188F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E9FA7625-9972-41C6-ADEB-2B0E1574CB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9FA7625-9972-41C6-ADEB-2B0E1574CB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9FA7625-9972-41C6-ADEB-2B0E1574CB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,5 +56,9 @@ Global
 		{40641D19-5DA5-4305-8DE2-323DEDCAA548}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40641D19-5DA5-4305-8DE2-323DEDCAA548}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40641D19-5DA5-4305-8DE2-323DEDCAA548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFC4CF1-9F64-473A-BD30-53D945B64CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFC4CF1-9F64-473A-BD30-53D945B64CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFC4CF1-9F64-473A-BD30-53D945B64CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFC4CF1-9F64-473A-BD30-53D945B64CE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

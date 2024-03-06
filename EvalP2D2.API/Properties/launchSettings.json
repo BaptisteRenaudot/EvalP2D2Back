@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "EvalP2D2Back": {
+    "EvalP2D2.API": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7002",
+      "commandLineArgs": "--port 7135",
       "launchBrowser": false
     }
   }
