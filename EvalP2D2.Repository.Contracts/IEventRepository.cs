@@ -16,4 +16,11 @@ public interface IEventRepository
     /// </summary>
     /// <returns> The list of events.</returns>
     public Task<IEnumerable<EventEntity>> GetEvents();
+    
+    /// <summary>
+    /// Deletes an event from the database asynchronously.
+    /// </summary>
+    /// <param name="id">The ID of the event to delete.</param>
+    /// <returns>true if the event is deleted successfully; otherwise, false.</returns>
+    public Task<bool> DeleteAsync(Guid id);
 }

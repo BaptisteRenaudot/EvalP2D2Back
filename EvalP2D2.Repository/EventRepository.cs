@@ -25,4 +25,16 @@ public class EventRepository: IEventRepository
     {
         return await this._context.eventEntity.ToListAsync();
     }
+    
+    public async Task<bool> DeleteAsync(Guid id)
+    {
+        var entity = await this._context.eventEntity.FindAsync(id);
+        if (entity == null)
+        {
+            return false;
+        }
+        this._context.eventEntity.Remove(entity);
+        await this._context.SaveChangesAsync();
+        return true;
+    }
 }
