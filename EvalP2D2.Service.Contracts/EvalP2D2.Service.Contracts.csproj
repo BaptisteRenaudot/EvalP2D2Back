@@ -7,4 +7,8 @@
         <RootNamespace>ClassLibrary1EvalP2D2.Service.Contracts</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\EvalP2D2.Entity\EvalP2D2.Entity.csproj" />
+    </ItemGroup>
+
 </Project>
