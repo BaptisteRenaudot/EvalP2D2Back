@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\EvalP2D2.Entity\EvalP2D2.Entity.csproj" />
+    </ItemGroup>
+
 </Project>

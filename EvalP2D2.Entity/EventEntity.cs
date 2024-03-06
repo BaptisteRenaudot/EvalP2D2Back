@@ -3,7 +3,7 @@ namespace EvalP2D2.Entity;
 /// <summary>
 /// Represents an event entity.
 /// </summary>
-public class eventEntity
+public class EventEntity
 {
     /// <summary>
     /// Gets or sets the unique identifier for the event entity.

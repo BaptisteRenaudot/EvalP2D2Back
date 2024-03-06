@@ -10,13 +10,13 @@ public class EvalDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
     }
     
-        public DbSet<eventEntity> eventEntity { get; set; }
+        public DbSet<EventEntity> eventEntity { get; set; }
         
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
     
-        modelBuilder.Entity<eventEntity>(
+        modelBuilder.Entity<EventEntity>(
             eventEntity =>
             {
                 eventEntity.ToTable("Event");
