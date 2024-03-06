@@ -23,4 +23,9 @@ public class EventService : IEventService
     {
         return await this._eventRepository.GetEvents();
     }
+    
+    public async Task<bool> DeleteAsync(Guid id)
+    {
+        return await this._eventRepository.DeleteAsync(id);
+    }
 }
